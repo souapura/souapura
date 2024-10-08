@@ -1,0 +1,317 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Formulário Plexi</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="icon" href="/assets/favicon%20plexi-6LfvzbMg.webp">
+    <script type="module" crossorigin="" src="/assets/index-D9vwNOQD.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/index-DqWOlwWP.css">
+  <style type="text/css">img[onload^="SVGInject("]{visibility:hidden;}</style><style type="text/css"></style><style type="text/css">.pixelParallel-panel[data-v-dedc8274]{position:fixed;right:10px;bottom:10px;z-index:2147483647;width:375px;height:265px;transform:translate(0);background:#fff;transition:width .2s ease-out,height .2s ease-out;will-change:top,left,width,height,transform;opacity:0}.pixelParallel-panel-inner[data-v-dedc8274]{position:relative;overflow:hidden;height:100%;border:1px solid #dddedf;box-shadow:0 2px 10px rgba(0,0,0,.1);box-sizing:border-box}.pixelParallel-panel-handle[data-v-dedc8274]{position:absolute;top:-10px;right:-10px;z-index:3;width:20px;height:20px;background:red;transform:rotate(45deg);background:linear-gradient(0deg,transparent,transparent 50%,#ccc 0,#ccc);background-size:100% 2px;cursor:move}.pixelParallel-panel-isolator[data-v-dedc8274]{border:0;width:100%;height:100%;overflow:hidden;position:relative}.pixelParallel-panel-dragging .pixelParallel-panel-inner[data-v-dedc8274]{pointer-events:none}.pixelParallel-panel-minimized[data-v-dedc8274]{width:112px;height:50px;transition:width .2s ease-out .15s,height .2s ease-out .15s}@media (max-width:395px){.pixelParallel-panel[data-v-dedc8274]{right:0;bottom:0;width:320px}.pixelParallel-panel-minimized[data-v-dedc8274]{width:112px}}</style><style type="text/css">.pixelParallel-overlay{position:absolute;left:0;top:0;width:100%;text-align:center;white-space:nowrap;display:none}.pixelParallel-overlay-enabled{display:block}</style><style type="text/css">.pixelParallel-image-outer{visibility:hidden;position:absolute;top:0;left:0;width:100%;overflow:hidden;max-width:100vw;min-height:100vh}.pixelParallel-image-inner{position:absolute;z-index:2147483646;left:50%;top:0;cursor:move;transform:translateX(-50%);transition:opacity .15s}.pixelParallel-image-inner img{width:auto;height:auto;max-width:none;max-height:none;vertical-align:top;margin:0;padding:0;position:relative;transform-origin:50% 0;top:-1px;border:1px dashed #333}.pixelParallel-image-inner img:not([src]),.pixelParallel-image-inner img[src=""]{visibility:hidden}.pixelParallel-image-enabled{visibility:visible}.pixelParallel-image-difference{mix-blend-mode:difference}.pixelParallel-image-difference img{opacity:1!important}.pixelParallel-image-locked,.pixelParallel-image-no-image{pointer-events:none}.pixelParallel-image-locked .pixelParallel-image-inner img{top:0;border:0 none}</style><style type="text/css">.pixelParallel-grids{position:relative;z-index:2147483646;pointer-events:none}.pixelParallel-grid-horizontal,.pixelParallel-grid-vertical{position:fixed;z-index:1;pointer-events:none;visibility:hidden}.pixelParallel-grid-horizontal{top:50%;left:50%;display:table;width:100vw;height:200vh;opacity:.5;table-layout:fixed;border-spacing:30px;transform:translate(-50%,-50%)}.pixelParallel-grid-horizontal span{display:table-cell;background:red;height:200vh}.pixelParallel-grid-vertical{top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,transparent,transparent 90%,blue 0,blue);background-size:100% 10px;opacity:.5}.pixelParallel-grid-horizontal-enabled,.pixelParallel-grid-vertical-enabled{visibility:visible}</style><style type="text/css">.pixelParallel-rulers{position:relative;z-index:2147483646}.pixelParallel-ruler-x,.pixelParallel-ruler-y{display:none;position:fixed;top:0;left:0;z-index:2;background:cyan}.pixelParallel-ruler-x:after,.pixelParallel-ruler-y:after{content:"";position:absolute;top:-8px;left:-8px;right:0;bottom:0;padding:10px}.pixelParallel-ruler-x{right:0;height:1px;cursor:row-resize}.pixelParallel-ruler-y{bottom:0;width:1px;cursor:col-resize}.pixelParallel-rulers-enabled .pixelParallel-ruler-x,.pixelParallel-rulers-enabled .pixelParallel-ruler-y{display:block}</style><style type="text/css">
+  @font-face {
+    font-weight: 400;
+    font-style:  normal;
+    font-family: circular;
+  
+    src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-weight: 700;
+    font-style:  normal;
+    font-family: circular;
+  
+    src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+  }</style></head>
+  
+  <body class="bg-white dark:bg-black vsc-initialized" style="" cz-shortcut-listen="true">
+  
+    <section class="relative flex min-h-screen w-full flex-1 overflow-y-auto" id="form-section">
+      <div id="form-container" class="pointer-events-none relative z-10 w-full overflow-hidden bg-black bg-opacity-0 pt-[calc(100vh-16rem)] lg:pointer-events-auto lg:z-auto lg:min-w-[502px] lg:max-w-[30%] lg:animate-none lg:overflow-visible lg:!bg-opacity-0 lg:pt-0" style="--tw-bg-opacity: 0;">
+        <div class="wrapperForm flex h-full min-w-full max-w-[calc(100%-3rem)] flex-1 justify-center overflow-hidden rounded-t-2xl border-r border-black/[0.07] bg-[#FDFDFD] p-6 shadow-[0px_0px_0px_1px,0px_-1px_1px_-0.5px,0px_-3px_3px_-1.5px,0px_-6px_6px_-3px,0px_-12px_12px_-6px,0px_-24px_24px_-12px] shadow-black/[0.04] lg:mt-0 lg:max-h-none lg:min-h-0 lg:w-full lg:justify-end lg:overflow-visible lg:rounded-none lg:p-12 lg:shadow-none">
+          <div class="flex h-full min-h-[80vh] w-full max-w-[420px] flex-col lg:min-h-0">
+            <div class="items-center hidden lg:flex">
+              <a href="">
+                <img src="/assets/favicon%20plexi-6LfvzbMg.webp" class="size-10 object-cover rounded-md" alt="Logo plexi">
+              </a>
+              <div class="leading-none pl-3">
+                <p class="font-bold text-lg">Gerador de proposta comercial</p>
+                <p class="text-xs text-gray-500">Feito por <a href="" class="">Plexi</a></p>
+              </div>
+            </div>
+            <div id="single-form" action="" class="lg:pt-24 pointer-events-auto flex flex-1 flex-col">
+              <div data-step="init" class="flex-1 flex flex-col active">
+                <h2 class="text-2xl font-semibold pb-2">Informações da página</h2>
+                <div class="-ml-12 w-[calc(100%+96px)] px-12 flex flex-col gap-6 mt-4">
+                  <label for="domainURL" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2 whitespace-nowrap">URL do seu domínio
+                    <input type="text" autocomplete="off" name="domainURL" id="domainURL" class="border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right" placeholder="seudominio.com">
+                  </label>
+                  <label for="pageSlug" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2 whitespace-nowrap">Slug da sua página
+                    <input type="text" autocomplete="off" name="pageSlug" id="pageSlug" class="border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right" placeholder="proposta-comercial">
+                  </label>
+                </div>
+                <h2 class="text-xl font-semibold mt-8">Informações da empresa</h2>
+                <div class="-ml-12 w-[calc(100%+96px)] px-12 flex flex-col gap-6 mt-4">
+                  <label for="empresa" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2 whitespace-nowrap">Nome da empresa
+                    <input type="text" autocomplete="off" name="empresa" id="empresa" class="paramValue w-full border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right" placeholder="Nome da empresa">
+                  </label>
+                  <label for="representante" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2 whitespace-nowrap">Nome do representante
+                    <input type="text" autocomplete="off" name="username" id="representante" class="paramValue w-full border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right" placeholder="John Doe"></label>
+                </div>
+                <div class="w-full mt-auto grid grid-cols-2 justify-between gap-3">
+                  <span></span>
+                  <button type="button" class="nextBtn flex-1 w-full flex flex-col items-end p-2 transition-all hover:bg-gray-100 rounded-md whitespace-nowrap">
+                    <div class="flex items-center text-sm text-gray-500">Proximo
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" data-inject-url="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2015L13%2010L8%205'%20stroke-width='1.66667'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="stroke-gray-500 inject-svg w-4 h-4 "><path d="M8 15L13 10L8 5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <p class="text-sm text-gray-700 font-semibold ">Detalhes do projeto</p>
+                  </button>
+                </div>
+              </div>
+  
+              <div data-step="details" class="flex-1 flex flex-col hidden">
+                <h2 class="text-2xl font-semibold pb-2">Detalhes do projeto</h2>
+                <div class="-ml-12 w-[calc(100%+96px)] px-12 flex flex-col gap-6 mt-4">
+                  <label for="data-validade" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2 whitespace-nowrap">Validade do Orçamento
+                    <input type="hidden" autocomplete="off" name="data-validade" id="data-validade" class="paramValue pl-10 py-2 border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right flatpickr-input" placeholder="07-10-2024" readonly="readonly"><input class="paramValue pl-10 py-2 border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right flatpickr-input flatpickr-mobile" tabindex="1" type="date" placeholder="07-10-2024" min="2024-10-07">
+                  </label>
+                  <div class="w-full">
+                    <label for="escopo" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2 whitespace-nowrap">Escopo do projeto
+                      <input type="text" autocomplete="off" name="escopo" id="escopo" class="inline-flex flex-1 border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right" placeholder="Ex.: Analise de copy, etc" data-value="">
+                    </label>
+                    <div id="escopoTabs" class="flex flex-wrap gap-1 mt-2"></div>
+                    <p class="text-sm text-gray-500 mt-1.5">Pressione
+                      <span class="px-1 py-0.5 rounded-[4px] inline-flex items-center justify-center bg-[#F9266B] text-gray-200">
+                        Enter
+                      </span>
+                      ou <span class="px-1 py-0.5 rounded-[4px] inline-flex items-center justify-center bg-[#F9266B] text-gray-200">
+                        ,
+                      </span>
+                      a cada valor que quiser incluir
+                    </p>
+                  </div>
+                  <div class="w-full">
+                    <label for="entregaveis" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2">Entregaveis
+                      <input type="text" name="entregaveis" autocomplete="off" id="entregaveis" class="inline-flex flex-1 border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right" placeholder="Ex.: Implementação, Otimização" data-value="">
+                    </label>
+                    <div id="entregaveisTabs" class="flex flex-wrap gap-1 mt-2"></div>
+                    <p class="text-sm text-gray-500 mt-1.5">Pressione
+                      <span class="px-1 py-0.5 rounded-[4px] inline-flex items-center justify-center bg-[#F9266B] text-gray-200">
+                        Enter
+                      </span>
+                      ou <span class="px-1 py-0.5 rounded-[4px] inline-flex items-center justify-center bg-[#F9266B] text-gray-200">
+                        ,
+                      </span>
+                      a cada valor que quiser incluir
+                    </p>
+                  </div>
+                </div>
+                <div class="w-full mt-auto grid grid-cols-2 justify-between gap-3">
+                  <button type="button" class="backBtn flex-1 w-full flex text-left flex-col items-start p-2 transition-all hover:bg-gray-100 rounded-md">
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-inject-url="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2015L13%2010L8%205'%20stroke-width='1.66667'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="stroke-gray-500 rotate-180 inject-svg w-4 h-4"><path d="M8 15L13 10L8 5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                      Anterior
+                    </div>
+                    <p class="text-sm text-gray-700 font-semibold">Informações da empresa</p>
+                  </button>
+                  <button type="button" class="nextBtn flex-1 w-full flex flex-col items-end p-2 transition-all hover:bg-gray-100 rounded-md">
+                    <div class="flex items-center text-sm text-gray-500">Proximo
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-inject-url="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2015L13%2010L8%205'%20stroke-width='1.66667'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="stroke-gray-500 inject-svg w-4 h-4"><path d="M8 15L13 10L8 5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <p class="text-sm text-gray-700 font-semibold">Informações finais</p>
+                  </button>
+                </div>
+              </div>
+  
+              <div data-step="final-infos" class="flex-1 flex flex-col hidden">
+                <h2 class="text-2xl font-semibold pb-2">Informações finais</h2>
+                <div class="-ml-12 w-[calc(100%+96px)] px-12 flex flex-col gap-6 mt-4">
+                  <label for="data-inicio" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2">Previsão de inicio
+                    <input type="hidden" autocomplete="off" name="data-inicio" id="data-inicio" class="paramValue pl-10 border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right flatpickr-input" placeholder="07-10-2024" readonly="readonly"><input class="paramValue pl-10 border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right flatpickr-input flatpickr-mobile" tabindex="1" type="date" placeholder="07-10-2024" min="2024-10-07">
+                  </label>
+                  <label for="prazo" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2 whitespace-nowrap">Prazo de entrega
+                    <input type="text" autocomplete="off" name="username" id="prazo" class="paramValue w-full block border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right" placeholder="Ex.: 10 dias úteis">
+                  </label>
+                  <label for="condicao-pagamento" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2 whitespace-nowrap">Condição de pagamento
+                    <input type="text" autocomplete="off" name="username" id="condicao-pagamento" class="paramValue w-full block border-0 bg-transparent px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right" placeholder="Ex.: 100% adiantado">
+                  </label>
+                  <label for="preco" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2">Valor dos serviços
+                    <div class="relative max-w-fit flex items-center justify-end">
+                      <input type="text" autocomplete="off" name="preco" id="preco" class="paramValue border-0 bg-transparent p-0 lg:px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right" placeholder="00,00" data-value="">
+                      <div class="flex items-center">
+                        <label for="currency" class="sr-only">Currency</label>
+                        <div class="custom-select-container h-full">
+                          <select id="currency" name="currency" class="paramValue currencyInput h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-0 focus:ring-inset text-sm">
+                            <option value="BRL" selected="">BRL</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                          </select>
+                          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-inject-url="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2015L13%2010L8%205'%20stroke-width='1.66667'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="inject-svg size-5 rotate-90 stroke-gray-500 absolute top-1/2 -translate-y-1/2 right-2"><path d="M8 15L13 10L8 5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                  <label for="discount-percentage" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2">Porcetagem de Desconto:
+                    <div class="flex items-center justify-end">
+                      <input type="text" autocomplete="off" name="discount-percentage" id="discount-percentage" class="paramValue border-0 bg-transparent p-0 lg:px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right max-w-32" placeholder="10">
+                      <span class="flex select-none items-center p-0 lg:px-3 text-sm">%</span>
+                    </div>
+                  </label>
+                  <label for="ancoragem" class="text-sm tracking-tight text-gray-900 font-semibold flex items-center justify-between border-b border-black/10 transition-all focus-within:border-[#F9266B] [&amp;:hover:not(:focus-within)]:border-black/20 pb-2">Valor da ancoragem
+                    <div class="relative flex items-center justify-end w-full">
+                      <input type="text" autocomplete="off" name="ancoragem" id="ancoragem" class="paramValue border-0 bg-transparent p-0 lg:px-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 text-sm sm:leading-6 text-right w-auto" placeholder="00,00" data-value="">
+                      <div class="flex items-center">
+                        <label for="currency02" class="sr-only">Currency</label>
+                        <div class="custom-select-container">
+                          <select id="currency02" name="currency" class="currencyInput h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-gray-400 text-sm" disabled="">
+                            <option value="BRL">BRL</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                          </select>
+                          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-inject-url="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2015L13%2010L8%205'%20stroke-width='1.66667'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="inject-svg size-5 rotate-90 stroke-gray-500 absolute top-1/2 -translate-y-1/2 right-2"><path d="M8 15L13 10L8 5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="w-full mt-auto grid grid-cols-2 justify-between gap-3">
+                  <button type="button" class="backBtn flex-1 w-full flex flex-col text-left items-start p-2 transition-all hover:bg-gray-100 rounded-md">
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-inject-url="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2015L13%2010L8%205'%20stroke-width='1.66667'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="stroke-gray-500 rotate-180 inject-svg w-4 h-4"><path d="M8 15L13 10L8 5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                      Anterior
+                    </div>
+                    <p class="text-sm text-gray-700 font-semibold">Detalhes do projeto</p>
+                  </button>
+                  <button type="button" class="nextBtn flex-1 w-full flex flex-col text-right items-end p-2 transition-all hover:bg-gray-100 rounded-md">
+                    <div class="flex items-center text-sm text-gray-500">Proximo
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-inject-url="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2015L13%2010L8%205'%20stroke-width='1.66667'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="stroke-gray-500 inject-svg w-4 h-4"><path d="M8 15L13 10L8 5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <p class="text-sm text-gray-700 font-semibold">Conferir &amp; compartilhar</p>
+                  </button>
+                </div>
+              </div>
+  
+              <div data-step="share" class="flex-1 flex flex-col hidden">
+                <h1 class="text-4xl font-semibold pb-2">Sua proposta está pronta!</h1>
+                <p class="text-lg mt-3 text-gray-600">Confira os campos e copie a URL para compartilhar.</p>
+                <button id="copy-url-btn" class="mt-5 flex py-2 px-3 w-full items-center justify-center gap-2 rounded-lg disabled:bg-gray-200 disabled:cursor-not-allowed bg-gradient-to-b from-gray-800 to-gray-950 dark:bg-white text-white dark:text-black text-base transition-all hover:opacity-80">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" data-inject-url="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13.3334%203.33334C14.1084%203.33334%2014.4958%203.33334%2014.8138%203.41852C15.6765%203.64969%2016.3504%204.32356%2016.5815%205.18629C16.6667%205.50421%2016.6667%205.8917%2016.6667%206.66667V14.3333C16.6667%2015.7335%2016.6667%2016.4335%2016.3942%2016.9683C16.1545%2017.4387%2015.7721%2017.8212%2015.3017%2018.0609C14.7669%2018.3333%2014.0668%2018.3333%2012.6667%2018.3333H7.33337C5.93324%2018.3333%205.23318%2018.3333%204.6984%2018.0609C4.22799%2017.8212%203.84554%2017.4387%203.60586%2016.9683C3.33337%2016.4335%203.33337%2015.7335%203.33337%2014.3333V6.66667C3.33337%205.8917%203.33337%205.50421%203.41856%205.18629C3.64973%204.32356%204.3236%203.64969%205.18633%203.41852C5.50424%203.33334%205.89173%203.33334%206.66671%203.33334M8.00004%205.00001H12C12.4668%205.00001%2012.7001%205.00001%2012.8784%204.90918C13.0352%204.82928%2013.1627%204.7018%2013.2425%204.545C13.3334%204.36674%2013.3334%204.13338%2013.3334%203.66667V3.00001C13.3334%202.53329%2013.3334%202.29994%2013.2425%202.12168C13.1627%201.96488%2013.0352%201.83739%2012.8784%201.7575C12.7001%201.66667%2012.4668%201.66667%2012%201.66667H8.00004C7.53333%201.66667%207.29997%201.66667%207.12172%201.7575C6.96491%201.83739%206.83743%201.96488%206.75754%202.12168C6.66671%202.29994%206.66671%202.53329%206.66671%203.00001V3.66667C6.66671%204.13338%206.66671%204.36674%206.75754%204.545C6.83743%204.7018%206.96491%204.82928%207.12172%204.90918C7.29997%205.00001%207.53333%205.00001%208.00004%205.00001Z'%20stroke='currentColor'%20stroke-width='1.66667'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="inject-svg size-5"><path d="M13.3334 3.33334C14.1084 3.33334 14.4958 3.33334 14.8138 3.41852C15.6765 3.64969 16.3504 4.32356 16.5815 5.18629C16.6667 5.50421 16.6667 5.8917 16.6667 6.66667V14.3333C16.6667 15.7335 16.6667 16.4335 16.3942 16.9683C16.1545 17.4387 15.7721 17.8212 15.3017 18.0609C14.7669 18.3333 14.0668 18.3333 12.6667 18.3333H7.33337C5.93324 18.3333 5.23318 18.3333 4.6984 18.0609C4.22799 17.8212 3.84554 17.4387 3.60586 16.9683C3.33337 16.4335 3.33337 15.7335 3.33337 14.3333V6.66667C3.33337 5.8917 3.33337 5.50421 3.41856 5.18629C3.64973 4.32356 4.3236 3.64969 5.18633 3.41852C5.50424 3.33334 5.89173 3.33334 6.66671 3.33334M8.00004 5.00001H12C12.4668 5.00001 12.7001 5.00001 12.8784 4.90918C13.0352 4.82928 13.1627 4.7018 13.2425 4.545C13.3334 4.36674 13.3334 4.13338 13.3334 3.66667V3.00001C13.3334 2.53329 13.3334 2.29994 13.2425 2.12168C13.1627 1.96488 13.0352 1.83739 12.8784 1.7575C12.7001 1.66667 12.4668 1.66667 12 1.66667H8.00004C7.53333 1.66667 7.29997 1.66667 7.12172 1.7575C6.96491 1.83739 6.83743 1.96488 6.75754 2.12168C6.66671 2.29994 6.66671 2.53329 6.66671 3.00001V3.66667C6.66671 4.13338 6.66671 4.36674 6.75754 4.545C6.83743 4.7018 6.96491 4.82928 7.12172 4.90918C7.29997 5.00001 7.53333 5.00001 8.00004 5.00001Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  Copiar URL
+                </button>
+                <a href="" target="_blank" rel="noopener" id="navigate" class="w-full ">
+                  <button id="url-navigator-btn" class="mt-2 py-2 px-3 w-full border border-gray-900 gap-2 rounded-lg disabled:bg-transparent disabled:border-gray-300 disabled:cursor-not-allowed disabled:text-gray-300 text-gray-800 text-base transition-all disabled:hover:bg-transparent">
+                    Acessar proposta
+                  </button>
+                </a>
+                <div class="w-full mt-auto grid grid-cols-2 justify-between gap-3">
+                  <button type="button" class="backBtn flex-1 w-full flex flex-col items-start p-2 transition-all hover:bg-gray-100 rounded-md">
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-inject-url="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2015L13%2010L8%205'%20stroke-width='1.66667'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="stroke-gray-500 rotate-180 inject-svg w-4 h-4"><path d="M8 15L13 10L8 5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                      Anterior
+                    </div>
+                    <p class="text-sm text-gray-700 font-semibold">Informações finais</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="squaresContainer fixed z-0 flex h-full  w-full flex-1 flex-col items-center bg-[#FDFDFD] p-6 [perspective:1000px] lg:relative lg:h-auto lg:max-h-none lg:justify-center">
+        <div class="relative z-10 flex items-center" style="transform: none;">
+          <div id="container" class="relative mx-auto flex h-[866px] min-h-[866px] w-[612.25px] origin-top scale-50 flex-col overflow-hidden rounded-[14px] bg-white shadow-[0_0_0_1px_rgba(0,25,59,.05),0_1px_1px_0_rgba(0,25,59,.04),0_3px_3px_0_rgba(0,25,59,.03),_0_6px_4px_0_rgba(0,25,59,.02),0_11px_4px_0_rgba(0,25,59,.01),0_32px_24px_-12px_rgba(0,0,59,.06)] md:scale-[0.8] lg:scale-100">
+            <div data-active="false" class="group w-full hover:data-[active=false]:bg-black/[0.02] relative isolate flex h-full max-h-[56px] flex-col border-black/10 transition-all duration-500">
+              <div class="pointer-events-none absolute inset-[8px]"></div>
+              <div class="flex h-full items-center justify-between border-b border-black/5 px-8">
+                <div>
+                  <p class="text-base font-semibold uppercase">Url base</p>
+                  <p class="text-xs font-medium" data-preview="domainURL"></p>
+                </div>
+                <div class="flex min-w-[44%] gap-5 pl-0">
+                  <div class="min-w-[60px]">
+                    <p class="pb-0.5 text-sm font-semibold uppercase tracking-wider">Data de validade</p>
+                    <p class="text-xs font-medium" data-preview="data-validade">7/10/2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-active="false" data-step-button="init" class="group w-full hover:data-[active=false]:bg-black/[0.02] border-b border-black/10 relative flex h-full flex-1 flex-col" role="button">
+              <div class="pointer-events-none absolute top-4 left-1/2 -translate-x-1/2 rounded-full px-2 py-1 bg-gradient-to-b from-gray-800 to-gray-950 flex items-center text-sm text-gray-200 tracking-tighter opacity-0 -translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 transition-all drop-shadow-lg">Informações iniciais</div>
+              <div class="p-8 py-6">
+                <p class="pb-2.5 text-sm font-semibold uppercase">Proposta para</p>
+                <div class="mb-3 flex w-fit flex-1">
+                  <div class="h-[45px] w-[45px] rounded-full bg-gray-200 flex items-center justify-center" data-preview="initial"></div>
+                </div>
+                <div class="flex flex-col">
+                  <p class="mb-1 min-h-[32px] truncate whitespace-normal text-2xl font-medium text-gray-600 data-[state=true]:text-gray-800" data-preview="empresa" data-state="false">Nome da empresa</p>
+                  <p class="mb-3 truncate text-base font-medium text-gray-400 data-[state=true]:text-gray-600" data-preview="representante" data-state="false">Nome do representante</p>
+                </div>
+              </div>
+            </div>
+            <div data-active="false" data-step-button="details" class="group w-full hover:data-[active=false]:bg-black/[0.02] max-w relative z-10 flex grow flex-col overflow-hidden lg:z-0" role="button">
+              <div class="pointer-events-none absolute top-4 left-1/2 -translate-x-1/2 rounded-full px-2 py-1 bg-gradient-to-b from-gray-800 to-gray-950 flex items-center text-sm text-gray-200 tracking-tighter opacity-0 -translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 transition-all drop-shadow-lg">Detalhes do projeto</div>
+              <div class="flex grow flex-col overflow-auto p-3 px-8 py-6 scrollbar-hide">
+                <h4 class="text-sm font-semibold uppercase tracking-wider text-gray-600">Descrição</h4>
+                <div class="py-3 pr-6">
+                  <p class="text-sm font-medium text-gray-500">Escopo do projeto</p>
+                  <p class="mt-2 text-sm font-medium text-gray-400 data-[state=true]:text-gray-800" data-preview="escope" data-state="false">...escopo do projeto</p>
+                  <span class="my-4 w-full h-[1px] block bg-gray-300"></span>
+                  <p class="mt-4 text-sm font-medium text-gray-500">Entregáveis</p>
+                  <p class="mt-2 text-sm font-medium text-gray-400 data-[state=true]:text-gray-800" data-preview="deliver" data-state="false">...entregaveis</p>
+                </div>
+              </div>
+            </div>
+            <div data-active="false" data-step-button="final-infos" class="group w-full hover:data-[active=false]:bg-black/[0.02] relative flex h-[var(--height)] min-h-[var(--height)] flex-col border-t border-black/10 transition-all duration-300" role="button" style="--height: 300px;">
+              <div class="pointer-events-none absolute top-4 left-1/2 -translate-x-1/2 rounded-full px-2 py-1 bg-gradient-to-b from-gray-800 to-gray-950 flex items-center text-sm text-gray-200 tracking-tighter opacity-0 -translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 transition-all drop-shadow-lg">Informações finais</div>
+              <div class="">
+                <div class="grid grid-cols-2 pt-[3px]">
+                  <p class="p-8 py-6 pb-0 text-sm text-gray-600 font-semibold uppercase  tracking-wider">Condições</p>
+                  <p class="p-8 py-6 pb-0 text-sm text-gray-600 font-semibold uppercase tracking-wider">Pagamento</p>
+                </div>
+                <div class="grid grid-cols-2">
+                  <div class="px-8 py-4">
+                    <p class="text-sm font-medium">Condições do pagamento</p>
+                    <p class="mt-2 text-sm font-medium text-gray-400 data-[state=true]:text-gray-800" data-preview="condicao-pagamento" data-state="false">100% adiantado</p>
+                    <p class="mt-4 text-sm font-medium">Prazo de entrega</p>
+                    <p class="mt-2 text-sm font-medium text-gray-400 data-[state=true]:text-gray-800" data-preview="prazo" data-state="false">15 dias úteis</p>
+                    <span class="my-4 w-full h-[1px] block bg-gray-300"></span>
+                    <p class="text-sm font-medium text-gray-700">Previsão de inicio</p>
+                    <p class="text-sm font-medium text-gray-400 data-[state=true]:text-gray-800" data-preview="data-inicio" data-state="false">7/10/2024</p>
+                  </div>
+                  <div class="px-8 py-4">
+                    <div class="flex items-center justify-between">
+                      <p class="text-sm font-medium text-gray-600">Valor dos serviços</p>
+                      <p class="text-sm font-medium text-gray-400 data-[state=true]:text-gray-800" data-preview="preco" data-state="false">R$1.000,00</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                      <p class="text-sm font-medium text-gray-600">Desconto aplicado</p>
+                      <p class="text-sm font-medium text-gray-400 data-[state=true]:text-gray-800" data-preview="discount-percentage" data-state="false">10%</p>
+                    </div>
+                    <span class="my-4 w-full h-[1px] block bg-gray-300"></span>
+                    <div class="mt-4 flex items-center justify-between">
+                      <p class="text-sm font-medium text-gray-600">Valor de ancoragem</p>
+                      <p class="text-sm font-medium text-gray-400 data-[state=true]:text-gray-800" data-preview="ancoragem" data-state="false">R$12.000,00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+  
+  
+  <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><section id="shadow-host-companion"></section></div><div id="yt_article_summary_widget_wrapper" class="yt_article_summary_widget_wrapper" style="display: none;">
+          <div id="yt_article_summary_widget" class="yt_article_summary_widget"><svg style="filter: brightness(0.8);" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="path-1-outside-1_3606_3145" maskUnits="userSpaceOnUse" x="1" y="1" width="22" height="22" fill="black">
+                    <rect fill="white" x="1" y="1" width="22" height="22"></rect>
+                    <path d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z"></path>
+                    </mask>
+                    <path d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z" fill="#828282"></path>
+                    <path d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z" stroke="#828282" stroke-width="0.2" mask="url(#path-1-outside-1_3606_3145)"></path>
+                </svg></div>
+          <div id="yt_article_summary_close_button" class="yt_article_summary_close_button">×</div>
+      </div></body></html>
